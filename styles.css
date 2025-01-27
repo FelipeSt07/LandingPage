@@ -1,6 +1,6 @@
 /* Variables para el tema claro (por defecto) */
 :root {
-    --background-color: #f5f7fa;
+    --background-color: #eaf2ff;
     --text-color: #333;
     --header-bg: #333;
     --header-text: #fff;
@@ -158,6 +158,20 @@ p {
 
 #home p {
     font-size: 1.2rem;
+}
+
+#about,
+#skills,
+#contact {
+    padding: 2rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#about:hover,
+#skills:hover,
+#contact:hover {
+    transform: translateY(-10px);
 }
 
 /* Formularios */
