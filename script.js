@@ -17,3 +17,11 @@ themeToggle.addEventListener("click", () => {
 
   themeToggle.textContent = newTheme === "dark" ? "☀️" : "🌙";
 });
+
+// Función para actualizar la barra de progreso
+window.onscroll = function () {
+    let totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+    let progress = (window.scrollY / totalHeight) * 100;
+    document.getElementById("progress-bar").style.width = progress + "%";
+  };
+  
